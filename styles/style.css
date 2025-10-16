@@ -69,9 +69,6 @@ ol {
   gap:30px;
 }
 
-.result {
-}
-
 .result__video-container {
   width: 711px;
   height: 386px;
@@ -116,9 +113,6 @@ ol {
   outline-offset: 1px;
 }
 
-.search-form__label-text {
-}
-
 .search-form__textfield {
   font-family: inherit;
   font-size: inherit;
@@ -148,11 +142,6 @@ ol {
 .search-form__checkbox-list .search-form__label:hover {
   text-decoration: underline;
 }
-
-.search-form__checkbox {
-}
-
-
 
 .search-form__pseudo-checkbox {
   height:19px;
@@ -203,14 +192,14 @@ ol {
 
 .search-form__submit-button {
   align-self: end;
-  padding:6px 73.5px;
+  padding:5px 73px;
 } 
 
 .content__details {
   display: flex;
   flex-direction: column;
-  gap:19px;
-  height:100%;  /**Под вопрсом **/
+  gap:21px;
+  height:100%; 
   width: 100%;
 }
 
@@ -229,8 +218,8 @@ ol {
   display:flex;
   flex-direction: column;
   height:298px;
- 
-  overflow-y: scroll;
+  width:398px;
+  overflow-y: auto;
   overflow-x:hidden;
   gap:30px;
   position:relative;
@@ -240,24 +229,6 @@ ol {
   display:flex;
   flex-direction: column;
   gap:30px;
-}
-
-.preloader-template {
-}
-.preloader {
-}
-.preloader-chasing-squares {
-}
-.square {
-}
-.cards-list-item-template {
-}
-
-.content__list-item {
-  padding: 0 3px;
-  display:grid; /**под вопросом**/
-  align-items: start;
-  
 }
 
 .content__card-link {
@@ -291,15 +262,19 @@ ol {
 .content__video-card {
   display:flex;
   align-items: start;
+  justify-content: space-between;
+  margin:0 3px 0 2px;
 }
 
 .content__video-card-description-container {
-  flex-grow: 1;
+  margin-top:-4px;
+  min-width:0;
 }
 
 .content__video-card-title {
   text-transform: uppercase;
   font-size:30px;
+  white-space:nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   font-weight: 700;
@@ -310,6 +285,12 @@ ol {
   line-height: 16.2px;
   font-weight: 400;
   font-family:'Fira Sans Condensed', sans-serif;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  line-clamp:2;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .content__video-card-thumbnail {
@@ -317,18 +298,10 @@ ol {
   width:194px;
   object-fit: cover;
   object-position: center;
-}
-
-.more-button-template {
+  flex-shrink: 0;
 }
 
 .more-button {
   padding: 6px 0;
-}
-
-.error-template {
-}
-.error {
-}
-.error__title {
+  margin-right:2px;
 }
